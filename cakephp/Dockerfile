@@ -3,7 +3,7 @@ MAINTAINER shimomo <yuichi@shimomo.net>
 
 WORKDIR /var/www/html
 
-COPY ./config/000-default.conf /etc/apache2/sites-available/000-default.conf
+COPY ./default.conf /etc/apache2/sites-available/000-default.conf
 
 RUN apt-get update && \
   apt-get -y install curl git libicu-dev libpq-dev zlib1g-dev zip && \
